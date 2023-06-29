@@ -15,7 +15,9 @@ docker exec -it app-tlc bash
 
 
 You should run the command
+```
 composer install
+```
 
 To create the database tables you must execute the commands
 ```
