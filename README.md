@@ -5,7 +5,7 @@ The project is developed in symfony 6.3.1 with docker.
 
 To start the project, open a command window and run the command git clone https://github.com/piocarluis/luiscarpiotest.git or download the project .zip.
 
-The next step is to access the project folder by command to launch the container, you must execute the following commands:
+The next step is to access the project folder by command to initialize the container. Execute:
 
 ```
 docker-compose build
