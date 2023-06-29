@@ -32,7 +32,7 @@ password: tlcpass
 database: tlc
 
 To test the requested functions we can do it with postman
-
+```
 endpoint http://localhost/circle/5.0
 method: GET
 
@@ -42,21 +42,17 @@ method: GET
 endpoint http://localhost/circle/sum-objects
 method: POST
 body select form-data:
-key value
-object1 {"radius":5}
-object2 {"radius":5}
+key object1 value {"radius":5}
+key object2 value {"radius":6}
 
 endpoint http://localhost/triangle/sum-objects
 method: POST
 body select form-data:
-key value
-object1 {"a":3,"b":4,"c":5}
-object2 {"a":3,"b":4,"c":5}
+key object1 value {"a":3,"b":4,"c":5}
+key object2 value {"a":3,"b":4,"c":5}
+```
 
-
-I added persistence to the database for each GET method consumed.
-
-
+I added a block of code to save records to the database for each GET method consumed.
 
 Finally, after the tests, the container must be stopped with the command
 ```
